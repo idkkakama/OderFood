@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Typography -->
+    <style name="Text.QLNH.HeadlineXL" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:fontFamily">@font/space_grotesk</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+
+    <style name="Text.QLNH.HeadlineLG" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:fontFamily">@font/space_grotesk</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="Text.QLNH.Headline" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">@font/space_grotesk</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="Text.QLNH.HeadlineSmall" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:fontFamily">@font/space_grotesk</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="Text.QLNH.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/geist</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="Text.QLNH.BodySmall" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">@font/geist</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="Text.QLNH.Label" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/space_grotesk</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="Text.QLNH.LabelLarge" parent="Text.QLNH.Label">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Text.QLNH.LabelSmall" parent="Text.QLNH.Label">
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+    <style name="Text.QLNH.Timer" parent="Text.QLNH.Label">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="Text.QLNH.Symbol" parent="">
+        <item name="android:fontFamily">@font/material_symbols_outlined</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- Components -->
+    <style name="Widget.QLNH.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/surface_container</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">1dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardPreventCornerOverlap">false</item>
+    </style>
+
+    <style name="Widget.QLNH.Card.Ticket" parent="Widget.QLNH.Card">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="Widget.QLNH.Chip" parent="">
+        <item name="android:background">@drawable/bg_chip_inactive</item>
+        <item name="android:fontFamily">@font/geist</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.QLNH.Chip.Active" parent="Widget.QLNH.Chip">
+        <item name="android:background">@drawable/bg_chip_active</item>
+        <item name="android:textColor">@color/on_primary_container</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.QLNH.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/space_grotesk</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/on_primary_container</item>
+        <item name="backgroundTint">@color/primary_container</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Widget.QLNH.Button.Tonal" parent="Widget.QLNH.Button">
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="backgroundTint">@color/surface_container_high</item>
+    </style>
+
+    <style name="Widget.QLNH.Button.Dark" parent="Widget.QLNH.Button">
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="backgroundTint">@color/surface_container_highest</item>
+    </style>
+
+    <style name="Widget.QLNH.Button.Danger" parent="Widget.QLNH.Button">
+        <item name="android:textColor">@color/on_error_container</item>
+        <item name="backgroundTint">@color/error_container</item>
+    </style>
+
+    <style name="Widget.QLNH.Button.Success" parent="Widget.QLNH.Button">
+        <item name="android:textColor">@color/on_tertiary_container</item>
+        <item name="backgroundTint">@color/tertiary_container</item>
+    </style>
+
+    <style name="Widget.QLNH.Button.Outline" parent="Widget.QLNH.Button">
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="backgroundTint">@color/transparent</item>
+        <item name="strokeColor">@color/outline_variant</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.QLNH.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.QLNH.Rounded4" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.QLNH.Rounded8" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.QLNH.Rounded12" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+</resources>
