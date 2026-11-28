@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">RestaurantOS</string>
-    <string name="brand_name">Bếp Cơm Phố Cổ</string>
-    <string name="role_badge">QL/KDS</string>
 
-    <string name="screen_table_map">Sơ Đồ Bàn</string>
-    <string name="screen_kitchen">Nhà Bếp</string>
-    <string name="screen_menu">Thực Đơn</string>
-    <string name="screen_management">Quản Lý</string>
-    <string name="screen_table_detail">Chi Tiết Bàn</string>
-    <string name="screen_order_menu">Gọi Món</string>
 
     <string name="nav_table_map">Sơ đồ bàn</string>
     <string name="nav_kitchen">Nhà bếp</string>
@@ -17,7 +9,6 @@
     <string name="nav_management">Quản lý</string>
 
     <!-- Table map -->
-    <string name="pulse_floor">Tầng 1 • Khu Chính</string>
     <string name="pulse_desc">Giờ cao điểm trưa • 14/24 bàn có khách</string>
     <string name="guests_34">34 khách</string>
     <string name="filter_all">Tất cả</string>
@@ -45,10 +36,6 @@
     <string name="guests_6">6 khách</string>
     <string name="guests_8">8 khách</string>
     <string name="guests_10">10 khách</string>
-    <string name="staff_mai">NV: Mai</string>
-    <string name="staff_huy">NV: Huy</string>
-    <string name="staff_nam">NV: Nam</string>
-    <string name="staff_truc">NV: Trúc</string>
     <string name="status_empty">Trống</string>
     <string name="status_ready">Sẵn sàng nhận khách</string>
     <string name="status_window_table">Bàn cạnh cửa sổ</string>
@@ -75,7 +62,6 @@
     <string name="view_order">Xem đơn</string>
     <string name="waiting_2_dishes">2 món chờ lâu</string>
     <string name="waiting_1_dish">1 món chờ ra</string>
-    <string name="note_ca_kho">• Cá kho tộ, Canh chua</string>
     <string name="note_suon">• Sườn xào chua ngọt</string>
     <string name="urge_kitchen_now">Hối bếp ngay</string>
     <string name="urge_kitchen">Hối bếp</string>
@@ -116,28 +102,22 @@
     <string name="vat" formatted="false">VAT (8%)</string>
     <string name="price_32">32.000 đ</string>
     <string name="total_label">Tổng thanh toán</string>
-    <string name="four_dishes_vat">4 Món • Đã VAT</string>
     <string name="price_432">432.000 đ</string>
     <string name="payment_method">Phương thức thanh toán</string>
     <string name="cash">Tiền mặt</string>
     <string name="transfer_qr">Chuyển khoản QR</string>
     <string name="add_dish_plus">+ Gọi thêm món</string>
-    <string name="print_and_pay">In hóa đơn &amp; Thanh toán</string>
-    <string name="processing_table_04">Đang xử lý Bàn 04</string>
     <string name="amount_due">Số tiền phải thu</string>
     <string name="qr_momo">QR MoMo / VietQR</string>
     <string name="confirm_done">Xác nhận hoàn tất</string>
     <string name="close">Đóng</string>
 
     <!-- Order menu -->
-    <string name="round_1_badge">LƯỢT 1</string>
     <string name="order_table_04">Gọi món • Bàn 04</string>
-    <string name="kds_realtime">KDS Realtime</string>
     <string name="search_dish_hint">Tìm món, mã số hoặc nguyên liệu...</string>
     <string name="category_all">Tất cả (45)</string>
     <string name="category_starters">Món khai vị</string>
     <string name="category_mains">Món chính</string>
-    <string name="category_soups">Món canh &amp; Rau</string>
     <string name="category_drinks">Đồ uống</string>
     <string name="dish_bo_xao_full">Bò xào hoa thiên lý</string>
     <string name="station_wok">Bếp xào</string>
@@ -175,14 +155,9 @@
     <string name="station_fry">Bếp chiên</string>
 
     <!-- Kitchen -->
-    <string name="pending_dishes">MÓN CHỜ</string>
-    <string name="kitchen_menu">THỰC ĐƠN BẾP</string>
     <string name="processing_orders">8 đơn đang xử lý</string>
     <string name="overdue_orders">2 đơn quá 15 phút</string>
     <string name="main_kitchen_ok">Bếp chính: OK</string>
-    <string name="table_04_upper">BÀN 04</string>
-    <string name="table_02_upper">BÀN 02</string>
-    <string name="table_07_upper">BÀN 07</string>
     <string name="timer_1642">16:42</string>
     <string name="timer_0615">06:15</string>
     <string name="timer_0210">02:10</string>
@@ -190,28 +165,19 @@
     <string name="at_1845">Vào lúc: 18:45</string>
     <string name="at_1849">Vào lúc: 18:49</string>
     <string name="over_15">Quá 15p</string>
-    <string name="cooking_status">ĐANG NẤU</string>
     <string name="note_less_oil_no_onion">Ghi chú: Ít dầu mỡ, không hành lá</string>
     <string name="done_status">Xong</string>
     <string name="note_hot_lime">Ghi chú: Bưng nóng kèm chanh ớt</string>
-    <string name="done_btn">ĐÃ XONG</string>
     <string name="waiting_cook">Chờ nấu</string>
-    <string name="cook">NẤU</string>
-    <string name="complete_table_04">HOÀN TẤT BÀN 04</string>
     <string name="normal_status">Bình thường</string>
     <string name="dish_ga_nuong">Gà nướng mật ong</string>
     <string name="waiting_status">Chờ</string>
     <string name="dish_com_nieu">Cơm niêu xá xíu</string>
     <string name="oven_3">Lò số 3</string>
-    <string name="complete_table_02">HOÀN TẤT BÀN 02</string>
-    <string name="new_order">Đơn Mới!</string>
     <string name="two_minutes">2 phút</string>
     <string name="dish_bia">Bia Hà Nội ướp lạnh</string>
-    <string name="bar_served">Bar Đã Ra</string>
-    <string name="bar_delivered">Đã giao bàn từ quầy Bar</string>
     <string name="dish_nom_bo">Nộm bò bóp thấu</string>
     <string name="with_shrimp_cracker">Ăn kèm bánh phồng tôm</string>
-    <string name="complete_table_07">HOÀN TẤT BÀN 07</string>
     <string name="active_orders">Đơn đang xử lý</string>
     <string name="qty_2x">2x</string>
     <string name="qty_1x">1x</string>
@@ -234,8 +200,6 @@
     <string name="dishes_value">182</string>
     <string name="dishes_unit">món</string>
     <string name="sla_ok">Bếp đạt SLA</string>
-    <string name="invite_title">Mã Mời Nhân Viên Tức Thì</string>
-    <string name="shift_live">CA TRƯA • LIVE</string>
     <string name="activation_code">Mã kích hoạt ca</string>
     <string name="invite_code">PHOCO88</string>
     <string name="copy_code">Sao chép mã</string>
@@ -245,16 +209,11 @@
     <string name="ecosystem">Hệ sinh thái RestaurantOS</string>
     <string name="menu_title">Thực đơn nhà hàng</string>
     <string name="menu_count">47 món tổng cộng</string>
-    <string name="sync_kds">ĐỒNG BỘ KDS</string>
     <string name="serving_label">Đang phục vụ</string>
     <string name="serving_45">45 món</string>
-    <string name="out_of_stock_label">Tạm báo hết (Bếp)</string>
     <string name="out_of_stock_02">02 món</string>
-    <string name="stock_and_price">Kho món &amp; Giá</string>
     <string name="add_dish">Thêm món</string>
-    <string name="table_management">Quản lý Bàn ăn</string>
     <string name="area_count">3 khu vực phục vụ</string>
-    <string name="tables_24">24 / 24 BÀN</string>
     <string name="floor1_tables">Tầng 1 (10 bàn)</string>
     <string name="floor2_tables">Tầng 2 (8 bàn)</string>
     <string name="garden_tables">Sân vườn (6 bàn)</string>
@@ -262,8 +221,6 @@
     <string name="add_table">Thêm bàn</string>
     <string name="team_title">Đội ngũ ca</string>
     <string name="working_8">8 đang làm việc</string>
-    <string name="servers_5">5 Phục vụ</string>
-    <string name="kitchen_3">3 Bếp KDS</string>
     <string name="config_title">Cấu hình quán</string>
     <string name="vat_printer">VAT 8% • Máy in</string>
     <string name="settings">Thiết lập</string>
@@ -275,11 +232,6 @@
     <string name="server_time">08:00 • Tầng 1</string>
     <string name="waiter_name">Lê Hoàng Nam</string>
     <string name="waiter_time">09:15 • Tầng 2</string>
-    <string name="role_head_chef">BẾP TRƯỞNG</string>
-    <string name="role_sous_chef">PHỤ BẾP</string>
-    <string name="role_server">PHỤC VỤ</string>
-    <string name="role_cashier">THU NGÂN</string>
-    <string name="role_floor_lead">TỔ TRƯỞNG BÀN</string>
     <string name="attendance">Xem chấm công &amp; lịch ca</string>
     <string name="view_all_8">Xem tất cả (8)</string>
 
@@ -304,26 +256,16 @@
     <string name="auth_password_hint">••••••••</string>
     <string name="auth_remember">Ghi nhớ phiên</string>
     <string name="auth_forgot_password">Quên mật khẩu?</string>
-    <string name="auth_login_action">ĐĂNG NHẬP</string>
-    <string name="auth_shift_divider">HOẶC NHÂN VIÊN CA</string>
     <string name="auth_pin_login">Vào nhanh bằng PIN 4 số</string>
     <string name="auth_no_account">Chưa có tài khoản?</string>
     <string name="auth_register_now">Đăng ký ngay</string>
     <string name="auth_register_title">Đăng ký</string>
     <string name="auth_back">Quay lại</string>
-    <string name="auth_register_header">Station Register</string>
-    <string name="auth_access">Restaurant OS Access</string>
-    <string name="auth_system_ready">SYSTEM READY</string>
     <string name="auth_owner">Chủ nhà hàng</string>
-    <string name="auth_owner_desc">Quản trị &amp; Doanh thu</string>
     <string name="auth_staff">Nhân viên</string>
-    <string name="auth_staff_desc">Bếp &amp; Phục vụ</string>
-    <string name="auth_full_name_label">Họ &amp; Tên</string>
     <string name="auth_full_name_hint">Nguyễn Văn Nam</string>
     <string name="auth_invite_label">Mã mời cơ sở (Tùy chọn)</string>
-    <string name="auth_invite_tag">TỰ ĐỘNG GÁN CA</string>
     <string name="auth_invite_hint">VD: PHOCO88</string>
-    <string name="auth_password_min">TỐI THIỂU 6 KÝ TỰ</string>
     <string name="auth_confirm_password_label">Xác nhận mật khẩu</string>
     <string name="auth_password_empty">Chưa nhập</string>
     <string name="auth_password_weak">Yếu (&lt; 6)</string>
@@ -331,19 +273,15 @@
     <string name="auth_password_strong">Mạnh</string>
     <string name="auth_password_very_strong">Rất an toàn</string>
     <string name="auth_terms_prefix">Đồng ý với</string>
-    <string name="auth_terms_agreement">Đồng ý với Điều khoản sử dụng &amp; Bảo mật vận hành</string>
     <string name="auth_terms">Điều khoản sử dụng</string>
     <string name="auth_privacy">Bảo mật vận hành</string>
-    <string name="auth_create_account">ĐĂNG KÝ TÀI KHOẢN</string>
     <string name="auth_setup_speed_title">Thiết lập trạm siêu tốc</string>
     <string name="auth_setup_speed_desc">Sẵn sàng nhận order &amp; phân luồng bếp sau 30 giây</string>
     <string name="auth_have_account">Đã có tài khoản?</string>
     <string name="auth_login_now">Đăng nhập ngay</string>
-    <string name="auth_pin_title">MÃ PIN ca làm</string>
     <string name="auth_pin_demo">PIN chỉ là bản demo, vui lòng đăng nhập bằng email.</string>
     <string name="auth_pin_incomplete">Vui lòng nhập đủ 4 số</string>
     <string name="auth_pin_clear">C</string>
-    <string name="auth_close">Đóng</string>
     <string name="auth_cancel">Hủy</string>
     <string name="auth_send">Gửi</string>
     <string name="auth_reset_title">Đặt lại mật khẩu</string>
@@ -367,9 +305,6 @@
     <string name="auth_error_network">Không có kết nối mạng. Vui lòng thử lại.</string>
     <string name="auth_error_profile_save">Tài khoản đã tạo nhưng chưa lưu được hồ sơ. Vui lòng đăng nhập lại.</string>
     <string name="auth_error_generic">Đã xảy ra lỗi. Vui lòng thử lại.</string>
-    <string name="auth_login_success">Đăng nhập thành công</string>
-    <string name="auth_register_success">Tạo tài khoản thành công</string>
-    <string name="auth_terms_toast">Điều khoản đang được cập nhật</string>
     <string name="logout">Đăng xuất</string>
     <string name="logout_desc">Kết thúc phiên làm việc trên thiết bị này</string>
     <string name="logout_confirm_title">Đăng xuất?</string>

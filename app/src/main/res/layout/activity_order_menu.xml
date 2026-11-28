@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/surface"
@@ -8,7 +7,6 @@
 
     <include layout="@layout/include_app_header" />
 
-    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -16,196 +14,44 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:clipToPadding="false"
-            android:fillViewport="true"
-            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp"
-                android:paddingBottom="104dp">
 
-                <!-- Table context -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_gradient_tray"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/order_table_04"
-                                android:textAllCaps="true"
-                                android:textColor="@color/on_surface_variant"
-                                android:textSize="10sp"
-                                android:textStyle="bold"
-                                android:letterSpacing="0.06" />
-
-                            <TextView
-                                style="@style/Text.QLNH.Headline"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/table_04"
-                                android:textColor="@color/on_surface"
-                                android:textSize="20sp" />
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bg_status_pill"
-                            android:backgroundTint="@color/primary_container"
-                            android:paddingHorizontal="8dp"
-                            android:paddingVertical="3dp"
-                            android:text="@string/round_1_badge"
-                            android:textColor="@color/on_primary_container"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/material_symbols_outlined"
-                            android:includeFontPadding="false"
-                            android:text="@string/sym_group"
-                            android:textColor="@color/on_surface_variant"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="4dp"
-                            android:text="@string/guests_4"
-                            android:textColor="@color/on_surface_variant"
-                            android:textSize="11sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="6dp"
-                            android:text="•"
-                            android:textColor="@color/outline_variant" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/material_symbols_outlined"
-                            android:includeFontPadding="false"
-                            android:text="@string/sym_schedule"
-                            android:textColor="@color/on_surface_variant"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="3dp"
-                            android:text="@string/time_1830"
-                            android:textColor="@color/on_surface_variant"
-                            android:textSize="11sp" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <!-- Search -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:orientation="horizontal">
+                    android:gravity="center_vertical"
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_search"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingHorizontal="12dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/material_symbols_outlined"
-                            android:includeFontPadding="false"
-                            android:text="@string/sym_search"
-                            android:textColor="@color/on_surface_variant"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="8dp"
-                            android:layout_weight="1"
-                            android:background="@null"
-                            android:hint="@string/search_dish_hint"
-                            android:imeOptions="actionSearch"
-                            android:inputType="text"
-                            android:maxLines="1"
                             android:textColor="@color/on_surface"
-                            android:textColorHint="@color/on_surface_variant"
-                            android:textSize="13sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/material_symbols_outlined"
-                            android:includeFontPadding="false"
-                            android:text="@string/sym_mic"
-                            android:textColor="@color/primary"
-                            android:textSize="20sp" />
+                            android:textStyle="bold" />
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginStart="8dp"
-                        android:background="@drawable/bg_surface_container_rounded"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_search"
+                    android:paddingHorizontal="12dp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/material_symbols_outlined"
-                            android:includeFontPadding="false"
-                            android:text="@string/sym_tune"
-                            android:textColor="@color/primary"
-                            android:textSize="22sp" />
-                    </LinearLayout>
-                </LinearLayout>
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:textColor="@color/on_surface"
 
-                <!-- Categories -->
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:clipToPadding="false"
                     android:scrollbars="none">
 
                     <LinearLayout
@@ -214,661 +60,88 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            style="@style/Widget.QLNH.Chip.Active"
-                            android:layout_width="wrap_content"
-                            android:layout_height="36dp"
-                            android:text="@string/category_all" />
-
-                        <TextView
-                            style="@style/Widget.QLNH.Chip"
-                            android:layout_width="wrap_content"
-                            android:layout_height="36dp"
-                            android:layout_marginStart="6dp"
-                            android:text="@string/category_starters" />
-
-                        <TextView
-                            style="@style/Widget.QLNH.Chip"
-                            android:layout_width="wrap_content"
-                            android:layout_height="36dp"
-                            android:layout_marginStart="6dp"
-                            android:text="@string/category_mains" />
-
-                        <TextView
-                            style="@style/Widget.QLNH.Chip"
-                            android:layout_width="wrap_content"
-                            android:layout_height="36dp"
-                            android:layout_marginStart="6dp"
-                            android:text="@string/category_soups" />
-
-                        <TextView
-                            style="@style/Widget.QLNH.Chip"
-                            android:layout_width="wrap_content"
-                            android:layout_height="36dp"
-                            android:layout_marginStart="6dp"
-                            android:text="@string/category_drinks" />
-                    </LinearLayout>
-                </HorizontalScrollView>
-
-                <!-- Featured section -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        style="@style/Text.QLNH.Label"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/featured_dishes"
-                        android:textAllCaps="true" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/view_all"
-                        android:textColor="@color/primary"
-                        android:textSize="11sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <!-- Row 1 -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="4dp"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/surface_container"
-                        app:cardCornerRadius="16dp"
-                        app:cardElevation="1dp"
-                        app:strokeWidth="0dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <FrameLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="100dp">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:contentDescription="@string/dish_bo_xao"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/food_beef" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="top|start"
-                                    android:layout_margin="6dp"
-                                    android:background="@drawable/bg_status_pill"
-                                    android:backgroundTint="@color/primary_container"
-                                    android:paddingHorizontal="5dp"
-                                    android:paddingVertical="2dp"
-                                    android:text="@string/best_seller"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/on_primary_container"
-                                    android:textSize="8sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:layout_gravity="top|end"
-                                    android:layout_margin="6dp"
-                                    android:background="@drawable/bg_icon_tile"
-                                    android:clickable="true"
-                                    android:focusable="true"
-                                    android:fontFamily="@font/material_symbols_outlined"
-                                    android:gravity="center"
-                                    android:includeFontPadding="false"
-                                    android:text="@string/sym_add"
-                                    android:textColor="@color/on_primary_container"
-                                    android:textSize="19sp" />
-                            </FrameLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:padding="10dp">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:ellipsize="end"
-                                    android:maxLines="1"
-                                    android:text="@string/dish_bo_xao_full"
-                                    android:textColor="@color/on_surface"
-                                    android:textSize="13sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="1dp"
-                                    android:ellipsize="end"
-                                    android:maxLines="1"
-                                    android:text="@string/station_wok"
-                                    android:textColor="@color/on_surface_variant"
-                                    android:textSize="10sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="4dp"
-                                    android:text="@string/price_120"
-                                    android:textColor="@color/primary"
-                                    android:textSize="12sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </LinearLayout>
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/surface_container"
-                        app:cardCornerRadius="16dp"
-                        app:cardElevation="1dp"
-                        app:strokeWidth="0dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <FrameLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="100dp">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:contentDescription="@string/dish_canh_cua"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/food_crab_soup" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="top|start"
-                                    android:layout_margin="6dp"
-                                    android:background="@drawable/bg_status_pill"
-                                    android:backgroundTint="@color/tertiary_container"
-                                    android:paddingHorizontal="5dp"
-                                    android:paddingVertical="2dp"
-                                    android:text="@string/today_dish"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/on_tertiary_container"
-                                    android:textSize="8sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:layout_gravity="top|end"
-                                    android:layout_margin="6dp"
-                                    android:background="@drawable/bg_icon_tile"
-                                    android:clickable="true"
-                                    android:focusable="true"
-                                    android:fontFamily="@font/material_symbols_outlined"
-                                    android:gravity="center"
-                                    android:includeFontPadding="false"
-                                    android:text="@string/sym_add"
-                                    android:textColor="@color/on_primary_container"
-                                    android:textSize="19sp" />
-                            </FrameLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:padding="10dp">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:ellipsize="end"
-                                    android:maxLines="1"
-                                    android:text="@string/dish_canh_cua"
-                                    android:textColor="@color/on_surface"
-                                    android:textSize="13sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="1dp"
-                                    android:ellipsize="end"
-                                    android:maxLines="1"
-                                    android:text="@string/station_soup"
-                                    android:textColor="@color/on_surface_variant"
-                                    android:textSize="10sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="4dp"
-                                    android:text="@string/price_60"
-                                    android:textColor="@color/primary"
-                                    android:textSize="12sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </LinearLayout>
-                    </com.google.android.material.card.MaterialCardView>
-                </LinearLayout>
-
-                <!-- Row 2 -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="4dp"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/surface_container"
-                        app:cardCornerRadius="16dp"
-                        app:cardElevation="1dp"
-                        app:strokeWidth="0dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <FrameLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="100dp">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:contentDescription="@string/dish_ca_lang"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/food_catfish" />
-
-                                <TextView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:layout_gravity="top|end"
-                                    android:layout_margin="6dp"
-                                    android:background="@drawable/bg_icon_tile"
-                                    android:clickable="true"
-                                    android:focusable="true"
-                                    android:fontFamily="@font/material_symbols_outlined"
-                                    android:gravity="center"
-                                    android:includeFontPadding="false"
-                                    android:text="@string/sym_add"
-                                    android:textColor="@color/on_primary_container"
-                                    android:textSize="19sp" />
-                            </FrameLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:padding="10dp">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:ellipsize="end"
-                                    android:maxLines="1"
-                                    android:text="@string/dish_ca_lang"
-                                    android:textColor="@color/on_surface"
-                                    android:textSize="13sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="1dp"
-                                    android:text="@string/station_grill"
-                                    android:textColor="@color/on_surface_variant"
-                                    android:textSize="10sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="4dp"
-                                    android:text="@string/price_280"
-                                    android:textColor="@color/primary"
-                                    android:textSize="12sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </LinearLayout>
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/surface_container"
-                        app:cardCornerRadius="16dp"
-                        app:cardElevation="1dp"
-                        app:strokeWidth="0dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <FrameLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="100dp">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:contentDescription="@string/dish_ga_doi"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/food_chicken" />
-
-                                <TextView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:layout_gravity="top|end"
-                                    android:layout_margin="6dp"
-                                    android:background="@drawable/bg_icon_tile"
-                                    android:clickable="true"
-                                    android:focusable="true"
-                                    android:fontFamily="@font/material_symbols_outlined"
-                                    android:gravity="center"
-                                    android:includeFontPadding="false"
-                                    android:text="@string/sym_add"
-                                    android:textColor="@color/on_primary_container"
-                                    android:textSize="19sp" />
-                            </FrameLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:padding="10dp">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:ellipsize="end"
-                                    android:maxLines="1"
-                                    android:text="@string/dish_ga_doi"
-                                    android:textColor="@color/on_surface"
-                                    android:textSize="13sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="1dp"
-                                    android:text="@string/station_steam"
-                                    android:textColor="@color/on_surface_variant"
-                                    android:textSize="10sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="4dp"
-                                    android:text="@string/price_220"
-                                    android:textColor="@color/primary"
-                                    android:textSize="12sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </LinearLayout>
-                    </com.google.android.material.card.MaterialCardView>
-                </LinearLayout>
-
-                <!-- Other dishes -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        style="@style/Text.QLNH.Label"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/other_dishes"
-                        android:textAllCaps="true" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/dishes_14"
-                        android:textColor="@color/on_surface_variant"
-                        android:textSize="10sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/bg_surface_container_rounded"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:background="@drawable/bg_surface_high_rounded"
-                        android:contentDescription="@string/dish_nem_ran"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/food_spring_rolls" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/dish_nem_ran"
-                            android:textColor="@color/on_surface"
-                            android:textSize="13sp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:textColor="@color/on_primary_container"
                             android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="1dp"
-                            android:text="@string/station_fry"
-                            android:textColor="@color/on_surface_variant"
-                            android:textSize="10sp" />
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:text="@string/price_95"
-                            android:textColor="@color/primary"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:textColor="@color/on_surface"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:textColor="@color/on_surface"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:textColor="@color/on_surface"
                             android:textSize="12sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <TextView
-                        android:layout_width="34dp"
-                        android:layout_height="34dp"
-                        android:background="@drawable/bg_icon_tile"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:fontFamily="@font/material_symbols_outlined"
-                        android:gravity="center"
-                        android:includeFontPadding="false"
-                        android:text="@string/sym_add"
-                        android:textColor="@color/on_primary_container"
-                        android:textSize="20sp" />
-                </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/bg_surface_container_rounded"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
 
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:background="@drawable/bg_surface_high_rounded"
-                        android:contentDescription="@string/dish_tra_sam_chia"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/food_pandan_tea" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/dish_tra_sam_chia"
-                            android:textColor="@color/on_surface"
-                            android:textSize="13sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="1dp"
-                            android:text="@string/station_bar"
-                            android:textColor="@color/on_surface_variant"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:text="@string/price_25"
-                            android:textColor="@color/primary"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="34dp"
-                        android:layout_height="34dp"
-                        android:background="@drawable/bg_icon_tile"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:fontFamily="@font/material_symbols_outlined"
-                        android:gravity="center"
-                        android:includeFontPadding="false"
-                        android:text="@string/sym_add"
-                        android:textColor="@color/on_primary_container"
-                        android:textSize="20sp" />
-                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/on_surface_variant"
             </LinearLayout>
         </ScrollView>
 
-        <!-- Cart summary -->
         <LinearLayout
-            android:id="@+id/cartBar"
             android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_gravity="bottom"
-            android:layout_margin="12dp"
-            android:background="@drawable/bg_dock"
-            android:elevation="8dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingHorizontal="14dp">
-
-            <TextView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:background="@drawable/bg_icon_tile"
-                android:fontFamily="@font/material_symbols_outlined"
-                android:gravity="center"
-                android:includeFontPadding="false"
-                android:text="@string/sym_receipt_long"
-                android:textColor="@color/on_primary_container"
-                android:textSize="21sp" />
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/summary_items"
-                    android:textColor="@color/on_surface"
                     android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/summary_total"
                     android:textColor="@color/primary"
-                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <LinearLayout
                 android:id="@+id/btnSendKitchen"
                 android:layout_width="wrap_content"
                 android:layout_height="44dp"
                 android:background="@drawable/bg_button_primary"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:paddingHorizontal="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/material_symbols_outlined"
-                    android:includeFontPadding="false"
-                    android:text="@string/sym_send"
-                    android:textColor="@color/on_primary_container"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
-                    android:text="@string/send_kitchen"
-                    android:textColor="@color/on_primary_container"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+                android:textColor="@color/on_primary_container"
+                android:textStyle="bold" />
         </LinearLayout>
-    </FrameLayout>
 
     <include layout="@layout/include_bottom_nav" />
 </LinearLayout>

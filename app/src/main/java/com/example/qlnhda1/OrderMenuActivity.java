@@ -22,7 +22,5 @@ public class OrderMenuActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        UiUtils.onTap(findViewById(R.id.btnSendKitchen),
-                () -> UiUtils.toast(this, R.string.toast_sent_kitchen));
     }
 }

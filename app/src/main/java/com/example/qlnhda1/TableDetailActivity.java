@@ -32,7 +32,6 @@ public class TableDetailActivity extends BaseActivity {
         payQr = findViewById(R.id.payQr);
         checkoutSheet = findViewById(R.id.sheetCheckout);
         bindPaymentMethods();
-        selectPayment(true);
         bindActions();
     }
 
@@ -55,8 +54,6 @@ public class TableDetailActivity extends BaseActivity {
     }
 
     private void bindActions() {
-        UiUtils.onTap(findViewById(R.id.btnAddItem),
-                () -> startActivity(new Intent(this, OrderMenuActivity.class)));
 
         UiUtils.onTap(findViewById(R.id.btnCheckout), () -> {
             if (checkoutSheet != null) {
@@ -70,11 +67,9 @@ public class TableDetailActivity extends BaseActivity {
             }
         });
 
-        UiUtils.onTap(findViewById(R.id.btnConfirmCheckout), () -> {
-            if (checkoutSheet != null) {
-                checkoutSheet.setVisibility(View.GONE);
-            }
-            UiUtils.toast(this, R.string.toast_confirm_done);
+        if (checkoutSheet != null) {
+            checkoutSheet.setVisibility(View.GONE);
+        }
         });
     }
-}
+        }

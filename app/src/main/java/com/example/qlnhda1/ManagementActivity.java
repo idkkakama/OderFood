@@ -1,9 +1,6 @@
 package com.example.qlnhda1;
 
 import android.app.AlertDialog;
-import android.content.ClipData;
-import android.content.ClipboardManager;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -33,18 +30,11 @@ public class ManagementActivity extends BaseActivity {
         authRepository = new AuthRepository();
         sessionManager = new SessionManager(this);
 
-        UiUtils.onTap(findViewById(R.id.btnCopyCode), this::copyInviteCode);
         UiUtils.onTap(findViewById(R.id.btnOpenMap),
                 () -> startActivity(new Intent(this, MainActivity.class)));
         UiUtils.onTap(findViewById(R.id.btnAddDishMgmt),
-                () -> startActivity(new Intent(this, OrderMenuActivity.class)));
         UiUtils.onTap(findViewById(R.id.btnStockPrice),
-                () -> UiUtils.toast(this, R.string.toast_settings));
-        UiUtils.onTap(findViewById(R.id.btnAddTable),
-                () -> UiUtils.toast(this, R.string.toast_quick_open));
         UiUtils.onTap(findViewById(R.id.btnViewTeam),
-                () -> UiUtils.toast(this, R.string.toast_settings));
-        UiUtils.onTap(findViewById(R.id.btnSettings),
                 () -> UiUtils.toast(this, R.string.toast_settings));
         UiUtils.onTap(findViewById(R.id.btnLogout), this::confirmLogout);
     }
@@ -67,12 +57,6 @@ public class ManagementActivity extends BaseActivity {
         finish();
     }
 
-    private void copyInviteCode() {
-        ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-        if (clipboard != null) {
-            clipboard.setPrimaryClip(ClipData.newPlainText("invite_code",
-                    getString(R.string.invite_code)));
         }
-        UiUtils.toast(this, R.string.toast_copied);
     }
 }
